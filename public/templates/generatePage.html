@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Page</title>
+</head>
+<body>
+<h1>Generate Page</h1>
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+<h1>get your generated files here!</h1>
+<form action="http://localhost:8080/upload-data-file/" method="POST" enctype="multipart/form-data" target="dummyframe">
+    <label for="csv_file">File 1 CSV:</label>
+    <input type="file" id="csv_file" name="csv_file"><br>
+
+    <label for="docx_file">File 2 DOCX:</label>
+    <input type="file" id="docx_file" name="docx_file"><br>
+
+    <!--<label for="string_input">String Input:</label>
+    <input type="text" id="string_input" name="string_input"><br>
+-->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
